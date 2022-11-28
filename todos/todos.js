@@ -60,6 +60,10 @@ async function displayTodos() {
 // fetch the todos and store in state
 // call displayTodos
 
+window.addEventListener('load', () => {
+    displayTodos();
+});
+
 logoutButton.addEventListener('click', () => {
     logout();
 });
